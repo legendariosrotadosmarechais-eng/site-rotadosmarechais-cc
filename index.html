@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legendários Rota dos Marechais — 4 a 7 de Junho | Alagoas</title>
+<meta name="description" content="A jornada que transforma homens. Rota dos Marechais — 4 a 7 de Junho em Arapiraca, Alagoas. Amor, Honra e Unidade. Garanta sua vaga agora.">
+<meta property="og:title" content="Legendários Rota dos Marechais — Alagoas">
+<meta property="og:description" content="4 dias de trilha, desafio e transformação. 4 a 7 de Junho, Arapiraca, AL.">
+<link rel="icon" type="image/png" href="assets/avatar-legendarios.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{
+  --sand:#F9F0E3;--cream:#F0E4CE;--copper:#B8762A;--copper-d:#8B5A1A;
+  --copper-l:#D4943E;--brown:#2C1810;--brown-m:#5C3D1E;--deep:#1A0C06;
+  --gold:#C49A3C;--gold-l:#E8C060;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Lato',sans-serif;background:var(--sand);color:var(--brown);overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:.02em}
+
+/* ── HEADER ── */
+#hdr{position:fixed;top:0;width:100%;z-index:100;padding:1.1rem 2rem;
+  display:flex;justify-content:space-between;align-items:center;transition:.3s}
+#hdr.stuck{background:rgba(26,12,6,.96);backdrop-filter:blur(12px);
+  box-shadow:0 2px 24px rgba(0,0,0,.35);padding:.75rem 2rem}
+.hdr-logo{font-family:'Oswald',sans-serif;font-weight:700;font-size:1rem;
+  color:#fff;letter-spacing:.12em;text-transform:uppercase;line-height:1.15}
+.hdr-logo small{display:block;font-size:.6rem;font-weight:400;
+  color:var(--gold);letter-spacing:.22em}
+
+/* ── BUTTONS ── */
+.btn{display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;
+  font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:.7rem 1.6rem;border-radius:2px;text-decoration:none;
+  transition:all .3s;cursor:pointer;border:none}
+.btn-gold{background:linear-gradient(135deg,var(--copper),var(--copper-d));color:#fff}
+.btn-gold:hover{background:linear-gradient(135deg,var(--copper-l),var(--copper));
+  transform:translateY(-2px);box-shadow:0 6px 20px rgba(184,118,42,.4)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-l)}
+.btn-big{font-size:1.15rem;padding:1rem 2.8rem;
+  box-shadow:0 4px 28px rgba(184,118,42,.45)}
+.btn-big:hover{box-shadow:0 8px 36px rgba(184,118,42,.55)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;background:
+  radial-gradient(ellipse at 50% 0%,#3D2010 0%,var(--deep) 60%);
+  position:relative;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:7rem 1.5rem 5rem;overflow:hidden}
+#hero::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 55% at 50% 30%,rgba(184,118,42,.12) 0%,transparent 70%);
+  pointer-events:none}
+#hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:100px;
+  background:linear-gradient(to bottom,transparent,var(--sand))}
+
+/* Grain texture overlay */
+#hero .grain{position:absolute;inset:0;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:200px 200px;pointer-events:none}
+
+/* Medallion */
+.medal{position:absolute;right:6%;top:50%;transform:translateY(-50%);
+  width:160px;height:160px}
+@media(max-width:900px){.medal{display:none}}
+@media(min-width:901px){.medal-mobile{display:none!important}}
+
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;
+  background:rgba(196,154,60,.12);border:1px solid rgba(196,154,60,.35);
+  color:var(--gold);font-family:'Oswald',sans-serif;font-size:.75rem;
+  letter-spacing:.22em;text-transform:uppercase;
+  padding:.4rem 1.1rem;border-radius:2px;margin-bottom:1.5rem}
+.hero-h1{font-size:clamp(2.8rem,8vw,6.5rem);font-weight:700;color:#fff;
+  text-transform:uppercase;line-height:.95;margin-bottom:1rem;
+  text-shadow:0 4px 32px rgba(0,0,0,.5)}
+.hero-h1 span{color:var(--gold-l);display:block}
+.hero-theme{font-family:'Oswald',sans-serif;font-size:clamp(1rem,2.5vw,1.4rem);
+  color:var(--gold);letter-spacing:.22em;text-transform:uppercase;margin-bottom:.4rem}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,.55);margin-bottom:2.2rem;
+  letter-spacing:.06em}
+.datebox{display:inline-flex;align-items:center;gap:1.5rem;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  padding:.8rem 2rem;border-radius:2px;margin-bottom:2.5rem}
+.datebox .n{font-family:'Oswald',sans-serif;font-size:2.2rem;font-weight:700;
+  color:#fff;line-height:1}
+.datebox .l{font-size:.6rem;color:rgba(255,255,255,.4);letter-spacing:.12em;
+  text-transform:uppercase}
+.datebox .sep{color:var(--gold);font-size:1.4rem}
+.datebox .vr{width:1px;height:42px;background:rgba(255,255,255,.1)}
+.ctas{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.8rem}
+.pulse-dot{display:inline-block;width:7px;height:7px;background:#f55;
+  border-radius:50%;animation:blink 1.5s infinite;margin-right:.4rem}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.scarcity{font-size:.82rem;color:rgba(255,255,255,.45);position:relative;z-index:1}
+
+/* ── SECTION COMMONS ── */
+.sec{padding:5.5rem 1.5rem}
+.sec-inner{max-width:1100px;margin:0 auto}
+.sec-sm{max-width:760px;margin:0 auto}
+.label{font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:500;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--copper);margin-bottom:.7rem}
+.label-w{color:var(--gold)}
+.title{font-family:'Oswald',sans-serif;font-size:clamp(1.9rem,4.5vw,3rem);
+  font-weight:700;color:var(--brown);text-transform:uppercase;line-height:1.05;
+  margin-bottom:1.2rem}
+.title-w{color:#fff}
+.divider{width:54px;height:3px;
+  background:linear-gradient(to right,var(--copper),var(--gold));
+  margin:0 auto 1.5rem}
+.divider-l{margin:0 0 1.5rem}
+.body{color:var(--brown-m);line-height:1.78;font-size:1rem}
+
+/* ── VIDEO ── */
+#video{background:var(--deep);padding:5rem 1.5rem}
+.vid-wrap{max-width:900px;margin:0 auto}
+.vid-box{aspect-ratio:16/9;background:linear-gradient(135deg,#2C1810,#3D2214);
+  border-radius:4px;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;border:1px solid rgba(196,154,60,.18);
+  position:relative;overflow:hidden;cursor:pointer}
+.vid-box::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,rgba(184,118,42,.08) 0%,transparent 65%)}
+.play{width:80px;height:80px;border-radius:50%;
+  background:rgba(196,154,60,.9);display:flex;align-items:center;justify-content:center;
+  transition:.3s;position:relative;z-index:1}
+.play:hover{background:var(--gold);transform:scale(1.1)}
+.play-tri{width:0;height:0;border-style:solid;
+  border-width:14px 0 14px 24px;
+  border-color:transparent transparent transparent var(--deep);margin-left:5px}
+.vid-cap{margin-top:1.4rem;color:rgba(255,255,255,.4);font-size:.82rem;
+  letter-spacing:.08em;text-align:center;position:relative;z-index:1}
+
+/* ── SOBRE ── */
+#sobre{background:var(--sand)}
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+@media(max-width:768px){.sobre-grid{grid-template-columns:1fr}}
+.val{display:flex;align-items:flex-start;gap:.9rem;
+  padding:.9rem 0;border-bottom:1px solid rgba(184,118,42,.13)}
+.val-icon{width:38px;height:38px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--copper),var(--copper-d));
+  display:flex;align-items:center;justify-content:center;font-size:1rem}
+.val-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:1.05rem;
+  color:var(--brown);text-transform:uppercase;margin-bottom:.2rem}
+.val-body{font-size:.88rem;color:var(--brown-m);line-height:1.55}
+
+/* ── EXPERIÊNCIA ── */
+#experiencia{background:var(--cream)}
+.day-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem;
+  margin-top:3rem}
+.day{background:var(--sand);border:1px solid rgba(184,118,42,.13);
+  border-top:3px solid var(--copper);padding:2rem 1.5rem;border-radius:2px;
+  transition:transform .3s,box-shadow .3s}
+.day:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(184,118,42,.12)}
+.day-n{font-family:'Oswald',sans-serif;font-size:3.5rem;font-weight:700;
+  color:rgba(184,118,42,.14);line-height:1;margin-bottom:.35rem}
+.day-l{font-family:'Oswald',sans-serif;font-size:.68rem;font-weight:500;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:.45rem}
+.day-t{font-family:'Oswald',sans-serif;font-size:1.25rem;font-weight:600;
+  color:var(--brown);text-transform:uppercase;margin-bottom:.7rem}
+.day-p{font-size:.88rem;color:var(--brown-m);line-height:1.62}
+
+/* ── NÚMEROS ── */
+#numeros{background:var(--deep);padding:5rem 1.5rem;position:relative;overflow:hidden}
+#numeros::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,rgba(184,118,42,.1) 0%,transparent 65%)}
+.num-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  max-width:900px;margin:2.5rem auto 0;position:relative;z-index:1}
+.num-item{text-align:center;padding:2rem 1rem;
+  border-right:1px solid rgba(255,255,255,.05)}
+.num-item:last-child{border-right:none}
+@media(max-width:640px){.num-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.05)}}
+.num-val{font-family:'Oswald',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);
+  font-weight:700;color:var(--gold);line-height:1;margin-bottom:.4rem}
+.num-lbl{font-size:.78rem;color:rgba(255,255,255,.4);
+  letter-spacing:.15em;text-transform:uppercase}
+
+/* ── DEPOIMENTOS ── */
+#depoimentos{background:var(--sand)}
+.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.8rem;margin-top:3rem}
+.test{background:#fff;border-radius:4px;padding:2rem;
+  border-left:3px solid var(--copper);
+  box-shadow:0 4px 22px rgba(184,118,42,.07)}
+.test-q{font-size:2.8rem;color:var(--copper);line-height:.5;
+  margin-bottom:.8rem;font-family:Georgia,serif}
+.test-p{font-size:.95rem;line-height:1.72;color:var(--brown-m);
+  font-style:italic;margin-bottom:1.4rem}
+.test-author{display:flex;align-items:center;gap:.75rem}
+.ava{width:46px;height:46px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--copper),var(--copper-d));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Oswald',sans-serif;font-weight:700;color:#fff;font-size:1rem}
+.ava-name{font-family:'Oswald',sans-serif;font-weight:600;
+  font-size:.95rem;color:var(--brown);text-transform:uppercase}
+.ava-city{font-size:.78rem;color:var(--copper)}
+
+/* ── FAQ ── */
+#faq{background:var(--cream)}
+.faq+.faq{margin-top:0}
+.faq-q{font-family:'Oswald',sans-serif;font-weight:500;font-size:1.05rem;
+  color:var(--brown);text-transform:uppercase;letter-spacing:.02em;
+  padding:1.2rem 0;cursor:pointer;display:flex;justify-content:space-between;
+  align-items:center;transition:color .25s;border-bottom:1px solid rgba(184,118,42,.18)}
+.faq-q:hover,.faq-q.on{color:var(--copper)}
+.faq-ico{width:24px;height:24px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--copper),var(--copper-d));
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:1.2rem;transition:transform .3s}
+.faq-q.on .faq-ico{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a.open{max-height:400px}
+.faq-ai{padding:.1rem 0 1.2rem;color:var(--brown-m);line-height:1.72;font-size:.94rem}
+
+/* ── CTA FINAL ── */
+#inscricao{
+  background:linear-gradient(160deg,#2C1810 0%,var(--deep) 100%);
+  padding:6rem 1.5rem;text-align:center;position:relative;overflow:hidden}
+#inscricao::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,rgba(184,118,42,.18) 0%,transparent 60%)}
+.insc-inner{max-width:700px;margin:0 auto;position:relative;z-index:1}
+.insc-dates{display:flex;justify-content:center;gap:2.5rem;
+  flex-wrap:wrap;margin:2rem 0;padding:1.5rem 0;
+  border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06)}
+.insc-d-val{font-family:'Oswald',sans-serif;font-size:1.4rem;
+  font-weight:700;color:#fff;margin-bottom:.2rem}
+.insc-d-lbl{font-size:.68rem;color:rgba(255,255,255,.35);
+  letter-spacing:.18em;text-transform:uppercase}
+.coupon{display:inline-flex;align-items:center;gap:1.2rem;
+  background:rgba(196,154,60,.09);
+  border:1px dashed rgba(196,154,60,.45);
+  padding:1rem 1.8rem;border-radius:4px;margin:1.8rem auto}
+.coupon-lbl{font-size:.75rem;color:rgba(255,255,255,.4);
+  text-align:left;line-height:1.5}
+.coupon-lbl b{color:rgba(255,255,255,.7)}
+.coupon-sep{width:1px;height:40px;background:rgba(196,154,60,.2)}
+.coupon-code{font-family:'Oswald',sans-serif;font-size:2.2rem;
+  font-weight:700;color:var(--gold);letter-spacing:.25em}
+
+/* ── FOOTER ── */
+footer{background:#0D0603;padding:3rem 1.5rem 2rem;text-align:center}
+.ft-logo{font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:700;
+  color:#fff;letter-spacing:.12em;text-transform:uppercase}
+.ft-sub{font-size:.62rem;color:rgba(255,255,255,.25);
+  letter-spacing:.25em;text-transform:uppercase;margin-top:.2rem;margin-bottom:1.4rem}
+.ft-links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1.8rem}
+.ft-links a{color:rgba(255,255,255,.35);font-size:.82rem;text-decoration:none;
+  letter-spacing:.05em;transition:color .25s}
+.ft-links a:hover{color:var(--gold)}
+.ft-copy{font-size:.72rem;color:rgba(255,255,255,.15);
+  padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.05)}
+
+/* ── REVEAL ── */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.rv.vis{opacity:1;transform:translateY(0)}
+.rv1{transition-delay:.1s}.rv2{transition-delay:.2s}
+.rv3{transition-delay:.3s}.rv4{transition-delay:.4s}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="hdr-logo" style="display:flex;align-items:center;gap:.7rem">
+    <img src="assets/logo-rota-dos-marechais.png" alt="Logo" style="width:36px;height:36px;object-fit:contain;border-radius:50%">
+    <div>
+      Rota dos Marechais
+      <small>Legendários · Alagoas</small>
+    </div>
+  </div>
+  <a href="#inscricao" class="btn btn-gold" style="display:none" id="hdr-cta">Garantir Vaga →</a>
+</header>
+
+<!-- ══════════════════════════════════════════════════════ HERO -->
+<section id="hero">
+  <div class="grain"></div>
+
+  <!-- Medallion -->
+  <div class="medal">
+    <img src="assets/selo-1-ano.png" alt="1 Ano Rota dos Marechais" style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 28px rgba(184,118,42,.5))">
+  </div>
+
+  <!-- Selo mobile (visível só em telas pequenas) -->
+  <img src="assets/selo-1-ano.png" alt="1 Ano Rota dos Marechais"
+    style="width:130px;height:130px;object-fit:contain;margin-bottom:1.2rem;
+    filter:drop-shadow(0 0 20px rgba(184,118,42,.5));display:block"
+    class="medal-mobile">
+
+  <div class="eyebrow">✦ Movimento Legendários · Alagoas</div>
+
+  <h1 class="hero-h1">
+    A Jornada Que
+    <span>Transforma Homens</span>
+  </h1>
+
+  <p class="hero-theme">Amor · Honra · Unidade</p>
+  <p class="hero-sub">Arapiraca, Alagoas — Brasil</p>
+
+  <div class="datebox">
+    <div><div class="n">4</div><div class="l">Jun</div></div>
+    <div class="sep">—</div>
+    <div><div class="n">7</div><div class="l">Jun</div></div>
+    <div class="vr"></div>
+    <div>
+      <div style="font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;color:#fff">2026</div>
+      <div class="l">4 dias</div>
+    </div>
+  </div>
+
+  <div class="ctas">
+    <a href="#inscricao" class="btn btn-gold btn-big">Garantir Minha Vaga</a>
+    <a href="#video" class="btn btn-ghost btn-big">Ver a Experiência ↓</a>
+  </div>
+
+  <p class="scarcity"><span class="pulse-dot"></span>Vagas limitadas — lista de espera sendo formada</p>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ VÍDEO -->
+<section id="video">
+  <div class="vid-wrap">
+    <div class="rv" style="text-align:center;margin-bottom:2.5rem">
+      <p class="label label-w">A Experiência</p>
+      <h2 class="title title-w">Veja Como É Ser Legendário</h2>
+      <div class="divider"></div>
+    </div>
+
+    <!--
+      TROCAR PELO EMBED DO VÍDEO:
+      <iframe width="100%" style="aspect-ratio:16/9;border-radius:4px"
+        src="https://www.youtube.com/embed/SEU_ID_AQUI?autoplay=0&rel=0"
+        frameborder="0" allowfullscreen></iframe>
+    -->
+    <div class="vid-box rv" onclick="window.open('https://www.instagram.com/legendariosrotadosmarechais/reels/','_blank')">
+      <div class="play"><div class="play-tri"></div></div>
+      <p class="vid-cap">
+        Assista os Reels no Instagram<br>
+        <span style="font-size:.72rem;opacity:.55">@legendariosrotadosmarechais</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ SOBRE -->
+<section id="sobre" class="sec">
+  <div class="sec-inner">
+    <div class="sobre-grid">
+
+      <div class="rv">
+        <p class="label">O Movimento</p>
+        <h2 class="title" style="text-align:left">O Que É a Rota dos Marechais?</h2>
+        <div class="divider divider-l"></div>
+        <p class="body" style="margin-bottom:1.2rem">
+          A <strong style="color:var(--brown)">Rota dos Marechais</strong> é a edição alagoana do movimento Legendários — uma jornada de 4 dias que leva homens a trilhas, desafios físicos e experiências de transformação pessoal nas paisagens de Alagoas.
+        </p>
+        <p class="body" style="margin-bottom:2rem">
+          Fundado em 2015 na Guatemala, o movimento já impactou mais de <strong style="color:var(--copper)">120.000 homens</strong> em 13 países e 70 cidades. Agora, em Arapiraca, você pode viver essa experiência.
+        </p>
+
+        <div class="val rv rv1">
+          <div class="val-icon">❤️</div>
+          <div>
+            <div class="val-title">Amor</div>
+            <div class="val-body">Reconectar com quem você ama, com propósito e intenção.</div>
+          </div>
+        </div>
+        <div class="val rv rv2">
+          <div class="val-icon">🛡️</div>
+          <div>
+            <div class="val-title">Honra</div>
+            <div class="val-body">Redescobrir seu caráter e viver com integridade todos os dias.</div>
+          </div>
+        </div>
+        <div class="val rv rv3">
+          <div class="val-icon">🤝</div>
+          <div>
+            <div class="val-title">Unidade</div>
+            <div class="val-body">Construir laços verdadeiros com outros homens na jornada.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rv rv2" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
+        <img src="assets/logo-rota-dos-marechais.png" alt="Logo Rota dos Marechais"
+          style="width:220px;height:220px;object-fit:contain;
+          filter:drop-shadow(0 8px 24px rgba(0,0,0,.18))">
+
+        <div style="background:var(--cream);border:1px solid rgba(184,118,42,.18);
+          padding:1.5rem;border-radius:4px;width:100%;max-width:280px;text-align:center">
+          <p class="label" style="text-align:center;margin-bottom:1rem">Parte de um movimento global</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div>
+              <div style="font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--copper)">120K+</div>
+              <div style="font-size:.7rem;color:var(--brown-m)">Legendários</div>
+            </div>
+            <div>
+              <div style="font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--copper)">13</div>
+              <div style="font-size:.7rem;color:var(--brown-m)">Países</div>
+            </div>
+            <div>
+              <div style="font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--copper)">70</div>
+              <div style="font-size:.7rem;color:var(--brown-m)">Cidades</div>
+            </div>
+            <div>
+              <div style="font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--copper)">1</div>
+              <div style="font-size:.7rem;color:var(--brown-m)">Ano em AL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ EXPERIÊNCIA -->
+<section id="experiencia" class="sec">
+  <div class="sec-inner">
+    <div class="rv" style="text-align:center">
+      <p class="label">Como Funciona</p>
+      <h2 class="title">4 Dias de Jornada</h2>
+      <div class="divider"></div>
+      <p class="body" style="max-width:540px;margin:0 auto">
+        Cada dia foi desenhado para desafiar, revelar e transformar. Do chegar ao partir, você não será o mesmo homem.
+      </p>
+    </div>
+    <div class="day-grid">
+      <div class="day rv rv1">
+        <div class="day-n">01</div>
+        <div class="day-l">Dia 1 · 4 de Junho</div>
+        <div class="day-t">Chegada & Abertura</div>
+        <p class="day-p">Chegada ao acampamento, ambientação com o grupo, abertura oficial da jornada e o primeiro desafio.</p>
+      </div>
+      <div class="day rv rv2">
+        <div class="day-n">02</div>
+        <div class="day-l">Dia 2 · 5 de Junho</div>
+        <div class="day-t">A Trilha Começa</div>
+        <p class="day-p">Corpo e mente são testados. Trilha, desafios físicos e momentos de reflexão nas paisagens de Alagoas.</p>
+      </div>
+      <div class="day rv rv3">
+        <div class="day-n">03</div>
+        <div class="day-l">Dia 3 · 6 de Junho</div>
+        <div class="day-t">O Coração da Jornada</div>
+        <p class="day-p">O dia mais intenso. Desafios emocionais, momentos de transformação e conexão profunda com o grupo.</p>
+      </div>
+      <div class="day rv rv4">
+        <div class="day-n">04</div>
+        <div class="day-l">Dia 4 · 7 de Junho</div>
+        <div class="day-t">Encerramento & Missão</div>
+        <p class="day-p">Celebração, compromissos e o envio. Você parte como um homem com propósito renovado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ NÚMEROS -->
+<section id="numeros">
+  <div style="max-width:1100px;margin:0 auto;position:relative;z-index:1">
+    <div class="rv" style="text-align:center">
+      <p class="label label-w">Prova Social</p>
+      <h2 class="title title-w">Um Movimento que Cresce</h2>
+    </div>
+    <div class="num-grid">
+      <div class="num-item rv">
+        <div class="num-val"><span data-target="1" data-suffix="">1</span> ANO</div>
+        <div class="num-lbl">Em Alagoas</div>
+      </div>
+      <div class="num-item rv rv1">
+        <div class="num-val"><span data-target="120000" data-suffix="+">0</span></div>
+        <div class="num-lbl">Legendários no Mundo</div>
+      </div>
+      <div class="num-item rv rv2">
+        <div class="num-val"><span data-target="13" data-suffix="">0</span></div>
+        <div class="num-lbl">Países Alcançados</div>
+      </div>
+      <div class="num-item rv rv3">
+        <div class="num-val"><span data-target="70" data-suffix="">0</span></div>
+        <div class="num-lbl">Cidades no Mundo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ DEPOIMENTOS -->
+<section id="depoimentos" class="sec">
+  <div class="sec-inner">
+    <div class="rv" style="text-align:center;margin-bottom:3.5rem">
+      <p class="label">Testemunhos</p>
+      <h2 class="title">O Que Dizem os Legendários</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="test-grid">
+      <div class="test rv">
+        <div class="test-q">"</div>
+        <p class="test-p">A Rota dos Marechais foi divisor de águas na minha vida. Cheguei um homem quebrado e parti com propósito. Indico para todo homem que quer encontrar a melhor versão de si mesmo.</p>
+        <div class="test-author">
+          <div class="ava">MR</div>
+          <div>
+            <div class="ava-name">Marcos Rodrigues</div>
+            <div class="ava-city">Maceió, AL</div>
+          </div>
+        </div>
+      </div>
+      <div class="test rv rv1">
+        <div class="test-q">"</div>
+        <p class="test-p">Quatro dias que valem por anos de terapia. A trilha, os irmãos que encontrei, os desafios — tudo foi projetado para arrancar o melhor de você. Voltei para casa um pai e marido diferente.</p>
+        <div class="test-author">
+          <div class="ava">FL</div>
+          <div>
+            <div class="ava-name">Felipe Lira</div>
+            <div class="ava-city">Arapiraca, AL</div>
+          </div>
+        </div>
+      </div>
+      <div class="test rv rv2">
+        <div class="test-q">"</div>
+        <p class="test-p">Não sabia o que esperar. Saí completamente transformado. A comunidade que se forma ali é para a vida toda. Conheci irmãos que até hoje caminham comigo.</p>
+        <div class="test-author">
+          <div class="ava">TC</div>
+          <div>
+            <div class="ava-name">Thiago Cavalcante</div>
+            <div class="ava-city">Palmeira dos Índios, AL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ FAQ -->
+<section id="faq" class="sec">
+  <div class="sec-sm">
+    <div class="rv" style="text-align:center;margin-bottom:3.5rem">
+      <p class="label">Dúvidas</p>
+      <h2 class="title">Perguntas Frequentes</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="rv">
+      <div class="faq-q" onclick="faq(this)">O que é o movimento Legendários?<span class="faq-ico">+</span></div>
+      <div class="faq-a"><div class="faq-ai">O Legendários é um movimento de transformação masculina fundado em 2015 na Guatemala pelo pastor Chepe Putzu. Com foco em trilhas e experiências imersivas, já impactou mais de 120.000 homens em 13 países. A Rota dos Marechais é a expressão alagoana desse movimento.</div></div>
+    </div>
+    <div class="rv rv1">
+      <div class="faq-q" onclick="faq(this)">Preciso ter condicionamento físico?<span class="faq-ico">+</span></div>
+      <div class="faq-a"><div class="faq-ai">Não é necessário ser atleta. As trilhas têm diferentes níveis de intensidade e toda a equipe está preparada para acompanhar cada participante. O que importa é disposição e vontade de se desafiar.</div></div>
+    </div>
+    <div class="rv rv2">
+      <div class="faq-q" onclick="faq(this)">É necessário ser cristão para participar?<span class="faq-ico">+</span></div>
+      <div class="faq-a"><div class="faq-ai">O movimento Legendários tem raízes cristãs, mas a experiência é aberta a homens de todas as crenças que buscam transformação, propósito e uma comunidade masculina forte. Venha como você é.</div></div>
+    </div>
+    <div class="rv rv3">
+      <div class="faq-q" onclick="faq(this)">O que está incluso no valor?<span class="faq-ico">+</span></div>
+      <div class="faq-a"><div class="faq-ai">A inscrição inclui participação em todos os 4 dias de atividades, alimentação durante o evento, suporte da equipe e acesso à comunidade Legendários Alagoas. Confira os detalhes completos na página de inscrição.</div></div>
+    </div>
+    <div class="rv">
+      <div class="faq-q" onclick="faq(this)">O que levar para a trilha?<span class="faq-ico">+</span></div>
+      <div class="faq-a"><div class="faq-ai">Roupas confortáveis para atividades ao ar livre, tênis de trilha, protetor solar, repelente, muda de roupa para cada dia e muita disposição. A lista completa é enviada após a confirmação da inscrição.</div></div>
+    </div>
+    <div class="rv rv1">
+      <div class="faq-q" onclick="faq(this)">Qual a localização exata do evento?<span class="faq-ico">+</span></div>
+      <div class="faq-a"><div class="faq-ai">O evento acontece em Arapiraca e região, Alagoas. Os detalhes de localização são enviados por e-mail após a confirmação da inscrição.</div></div>
+    </div>
+    <div class="rv rv2">
+      <div class="faq-q" onclick="faq(this)">Como aplicar o cupom TOP?<span class="faq-ico">+</span></div>
+      <div class="faq-a"><div class="faq-ai">Na página de inscrição, no campo "cupom de desconto", insira o código <strong>TOP</strong> e clique em aplicar. O desconto de R$ 350 será aplicado automaticamente no valor total.</div></div>
+    </div>
+    <div class="rv rv3">
+      <div class="faq-q" onclick="faq(this)">E se eu precisar cancelar?<span class="faq-ico">+</span></div>
+      <div class="faq-a"><div class="faq-ai">A política de cancelamento está disponível na plataforma de inscrição. Entre em contato com a organização pelo Instagram @legendariosrotadosmarechais para orientações sobre sua inscrição.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ CTA FINAL -->
+<section id="inscricao">
+  <div class="insc-inner rv">
+    <p class="label label-w" style="text-align:center">Próxima Edição</p>
+    <h2 style="font-family:'Oswald',sans-serif;font-size:clamp(2rem,6vw,3.8rem);
+      font-weight:700;color:#fff;text-transform:uppercase;line-height:1.05;
+      text-align:center;margin-bottom:.5rem">
+      Sua Vaga na<br><span style="color:var(--gold-l)">Rota dos Marechais</span>
+    </h2>
+
+    <div class="insc-dates">
+      <div><div class="insc-d-val">4 a 7 de Junho</div><div class="insc-d-lbl">Data</div></div>
+      <div style="width:1px;height:50px;background:rgba(255,255,255,.08)"></div>
+      <div><div class="insc-d-val">Arapiraca, AL</div><div class="insc-d-lbl">Localização</div></div>
+      <div style="width:1px;height:50px;background:rgba(255,255,255,.08)"></div>
+      <div><div class="insc-d-val">4 Dias</div><div class="insc-d-lbl">Duração</div></div>
+    </div>
+
+    <div style="text-align:center">
+      <div class="coupon">
+        <div class="coupon-lbl"><b>Use o cupom e economize</b><br>R$ 350 de desconto</div>
+        <div class="coupon-sep"></div>
+        <div class="coupon-code">TOP</div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:1.2rem">
+      <!-- INSERIR LINK DE INSCRIÇÃO ABAIXO (href) -->
+      <a href="#" target="_blank" class="btn btn-gold btn-big">
+        Garantir Minha Vaga Agora →
+      </a>
+      <p style="font-size:.78rem;color:rgba(255,255,255,.3);margin-top:1rem">
+        <span class="pulse-dot"></span>Vagas limitadas — inscrições podem encerrar a qualquer momento
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ FOOTER -->
+<footer>
+  <div class="ft-logo">Rota dos Marechais</div>
+  <div class="ft-sub">Legendários · Alagoas · Brasil</div>
+  <div class="ft-links">
+    <a href="https://www.instagram.com/legendariosrotadosmarechais/" target="_blank">Instagram</a>
+    <span style="color:rgba(255,255,255,.15)">·</span>
+    <a href="https://legendarios.org.br/" target="_blank">Legendários Brasil</a>
+  </div>
+  <div class="ft-copy">© 2026 Legendários Rota dos Marechais — Alagoas</div>
+</footer>
+
+<script>
+// Header scroll
+const hdr = document.getElementById('hdr');
+const hdrCta = document.getElementById('hdr-cta');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    hdr.classList.add('stuck');
+    hdrCta.style.display = 'inline-block';
+  } else {
+    hdr.classList.remove('stuck');
+    hdrCta.style.display = 'none';
+  }
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
+});
+
+// Reveal on scroll
+const rvObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+}, {threshold: 0.1});
+document.querySelectorAll('.rv').forEach(el => rvObs.observe(el));
+
+// Counter animation
+function animCount(el, target) {
+  const dur = 1600, steps = 60, stepMs = dur / steps;
+  let cur = 0;
+  const inc = target / steps;
+  const t = setInterval(() => {
+    cur = Math.min(cur + inc, target);
+    el.textContent = target >= 1000
+      ? Math.floor(cur).toLocaleString('pt-BR') + (el.dataset.suffix || '')
+      : Math.floor(cur) + (el.dataset.suffix || '');
+    if (cur >= target) clearInterval(t);
+  }, stepMs);
+}
+const numObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('[data-target]').forEach(el => {
+        animCount(el, parseInt(el.dataset.target));
+      });
+      numObs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.3});
+const ns = document.getElementById('numeros');
+if (ns) numObs.observe(ns);
+
+// FAQ accordion
+function faq(q) {
+  const a = q.nextElementSibling;
+  const isOpen = a.classList.contains('open');
+  document.querySelectorAll('.faq-a.open').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.faq-q.on').forEach(el => el.classList.remove('on'));
+  if (!isOpen) { a.classList.add('open'); q.classList.add('on'); }
+}
+</script>
+</body>
+</html>
