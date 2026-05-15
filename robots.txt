@@ -6,4 +6,4 @@ Disallow: /*?uri=
 Disallow: /*?elementor_library=
 Disallow: /*?et_core_page_resource=
 
-Sitemap: https://legendariosrotadosmarechais.com.br/sitemap.xml
+Sitemap: https://rotadosmarechais.com.br/sitemap.xml

@@ -6,7 +6,7 @@
 <title>Legendários Rota dos Marechais — 4 a 7 de Junho | Alagoas</title>
 <meta name="description" content="A jornada que transforma homens. Rota dos Marechais — 4 a 7 de Junho em Arapiraca, Alagoas. Amor, Honra e Unidade. Garanta sua vaga agora.">
 <meta property="og:title" content="Legendários Rota dos Marechais — Alagoas">
-<meta property="og:description" content="4 dias de trilha, desafio e transformação. 4 a 7 de Junho, Arapiraca, AL.">
+<meta property="og:description" content="4 dias de trilha, desafio e transformação pessoal em Alagoas. Amor, Honra e Unidade. Garanta sua vaga e venha ser Legendário — 4 a 7 de Junho, Arapiraca, AL.">
 <link rel="icon" type="image/png" href="assets/avatar-legendarios.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
@@ -15,7 +15,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="canonical" href="https://rotadosmarechais.com.br/">
 <link rel="preload" as="image" href="assets/capa.avif" type="image/avif" fetchpriority="high">
-<link rel="preload" as="image" href="assets/selo-1-ano.webp">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rotadosmarechais.com.br/">
 <meta property="og:image" content="https://rotadosmarechais.com.br/assets/og-image.jpg">
@@ -72,7 +71,6 @@
 }
 </script>
 <script>(function(){var b=['r','mod','uri','elementor_library','et_core_page_resource'];var p=new URLSearchParams(window.location.search);if(b.some(function(k){return p.has(k)}))window.location.replace(window.location.pathname);})()</script>
-<script src="https://cdn.tailwindcss.com"></script>
 <style>
 :root{
   /* Backgrounds — azul-céu suave (da logo) */
@@ -464,6 +462,10 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
 #sticky-cta .btn{flex-shrink:0;white-space:nowrap}
 @media(max-width:768px){#sticky-cta{display:flex}}
 
+/* ── FOCUS VISIBLE ── */
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.btn:focus-visible{outline-offset:4px}
+
 /* ── REDUCED MOTION ── */
 @media(prefers-reduced-motion:reduce){
   .rv{opacity:1;transform:none;transition:none}
@@ -501,12 +503,11 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
 
   <!-- Medallion -->
   <div class="medal" id="hero-medal">
-    <img src="assets/selo-1-ano.webp" alt="1 Ano Rota dos Marechais" fetchpriority="high" style="width:100%;height:100%;object-fit:contain">
+    <img src="assets/selo-1-ano.webp" alt="1 Ano Rota dos Marechais" loading="lazy" style="width:100%;height:100%;object-fit:contain">
   </div>
 
   <!-- Selo mobile -->
   <img src="assets/selo-1-ano.webp" alt="1 Ano Rota dos Marechais"
-    fetchpriority="high"
     style="width:130px;height:130px;object-fit:contain;margin-bottom:1.2rem;
     filter:drop-shadow(0 0 20px rgba(46,122,142,.5));display:block;position:relative;z-index:2"
     class="medal-mobile">
@@ -563,13 +564,13 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
         src="https://www.youtube.com/embed/SEU_ID_AQUI?autoplay=0&rel=0"
         frameborder="0" allowfullscreen></iframe>
     -->
-    <div class="vid-box rv" onclick="window.open('https://www.instagram.com/legendariosrotadosmarechais/reels/','_blank')">
-      <div class="play"><div class="play-tri"></div></div>
+    <button class="vid-box rv" onclick="window.open('https://www.instagram.com/legendariosrotadosmarechais/reels/','_blank')" aria-label="Assistir Reels no Instagram @legendariosrotadosmarechais (abre em nova aba)" style="width:100%;border:1px solid rgba(90,158,184,.2);background:linear-gradient(135deg,#0A2035,#122D45)">
+      <div class="play" aria-hidden="true"><div class="play-tri"></div></div>
       <p class="vid-cap">
         Assista os Reels no Instagram<br>
         <span style="font-size:.72rem;opacity:.55">@legendariosrotadosmarechais</span>
       </p>
-    </div>
+    </button>
   </div>
 </section>
 
@@ -620,7 +621,7 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
 
       <div class="rv rv2" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
         <img src="assets/logo-rota-dos-marechais.webp" alt="Logo Rota dos Marechais"
-          loading="lazy" width="220" height="220"
+          loading="lazy" width="220" height="220" style="width:220px;height:220px"
           style="width:220px;height:220px;object-fit:contain;
           filter:drop-shadow(0 8px 24px rgba(0,0,0,.18));
           transition:filter .4s,transform .4s"
@@ -869,7 +870,7 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
     <span style="color:rgba(255,255,255,.15)">·</span>
     <a href="https://legendarios.org.br/" target="_blank" rel="noopener noreferrer">Legendários Brasil</a>
   </div>
-  <div class="ft-copy">© 2026 Legendários Rota dos Marechais — Alagoas &nbsp;·&nbsp; <a href="/politica-de-privacidade.html" style="color:rgba(255,255,255,.3);text-decoration:none" onmouseover="this.style.color='rgba(196,168,124,.7)'" onmouseout="this.style.color='rgba(255,255,255,.3)'">Política de Privacidade</a></div>
+  <div class="ft-copy">© 2026 Legendários Rota dos Marechais — Alagoas &nbsp;·&nbsp; <a href="/politica-de-privacidade/" style="color:rgba(255,255,255,.3);text-decoration:none" onmouseover="this.style.color='rgba(196,168,124,.7)'" onmouseout="this.style.color='rgba(255,255,255,.3)'">Política de Privacidade</a></div>
 </footer>
 
 <script>
