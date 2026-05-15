@@ -2,8 +2,8 @@
   "name": "Legendários Rota dos Marechais",
   "short_name": "Rota dos Marechais",
   "description": "A jornada que transforma homens. 4 a 7 de Junho, Arapiraca, Alagoas.",
-  "theme_color": "#1A0C06",
-  "background_color": "#F9F0E3",
+  "theme_color": "#152535",
+  "background_color": "#EDF5F9",
   "display": "standalone",
   "start_url": "/",
   "icons": [
