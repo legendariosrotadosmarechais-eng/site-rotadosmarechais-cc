@@ -14,7 +14,8 @@
 <meta name="robots" content="index, follow">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="canonical" href="https://rotadosmarechais.com.br/">
-<link rel="preload" as="image" href="assets/rota-dos-marechais-alagoas-jornada-homens.avif" type="image/avif" fetchpriority="high">
+<link rel="preload" as="image" href="assets/rota-dos-marechais-alagoas-jornada-homens-mobile.webp" type="image/webp" media="(max-width:768px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/rota-dos-marechais-alagoas-jornada-homens.avif" type="image/avif" media="(min-width:769px)" fetchpriority="high">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rotadosmarechais.com.br/">
 <meta property="og:image" content="https://rotadosmarechais.com.br/assets/og-rota-dos-marechais-alagoas-2026.jpg">
@@ -25,9 +26,8 @@
 <meta name="twitter:title" content="Legendários Rota dos Marechais — Alagoas">
 <meta name="twitter:description" content="A jornada que transforma homens. 4 a 7 de Junho em Arapiraca, Alagoas.">
 <meta name="twitter:image" content="https://rotadosmarechais.com.br/assets/og-rota-dos-marechais-alagoas-2026.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/oswald-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/lato-400-latin.woff2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,6 +72,11 @@
 </script>
 <script>(function(){var b=['r','mod','uri','elementor_library','et_core_page_resource'];var p=new URLSearchParams(window.location.search);if(b.some(function(k){return p.has(k)}))window.location.replace(window.location.pathname);})()</script>
 <style>
+@font-face{font-family:'Oswald';font-style:normal;font-weight:400 700;font-display:swap;src:url('assets/fonts/oswald-latin.woff2') format('woff2')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:300;font-display:swap;src:url('assets/fonts/lato-300-latin.woff2') format('woff2')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-latin.woff2') format('woff2')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/lato-700-latin.woff2') format('woff2')}
+@font-face{font-family:'Lato';font-style:italic;font-weight:400;font-display:swap;src:url('assets/fonts/lato-italic-400-latin.woff2') format('woff2')}
 :root{
   /* Backgrounds — azul-céu suave (da logo) */
   --sand:#EDF5F9;--cream:#DCE9F0;
@@ -106,6 +111,11 @@ h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:.02em}
   display:none
 }
 @media(hover:hover){#cursor-fx{display:block}}
+@media(max-width:600px){
+  #hdr{padding:.85rem 1.1rem}
+  #hdr.stuck{padding:.65rem 1.1rem}
+  #hdr-cta{font-size:.68rem!important;padding:.4rem .8rem!important;letter-spacing:.06em!important;white-space:nowrap}
+}
 
 /* ── HEADER ── */
 #hdr{position:fixed;top:0;width:100%;z-index:100;padding:1.1rem 2rem;
@@ -152,6 +162,7 @@ h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:.02em}
   position:relative;display:flex;flex-direction:column;
   align-items:center;justify-content:center;
   text-align:center;padding:7rem 1.5rem 4rem;overflow:hidden}
+@media(max-width:768px){#hero{background-image:radial-gradient(ellipse at 50% -10%,rgba(10,37,64,.68) 0%,rgba(6,16,26,.55) 50%,rgba(6,16,26,.78) 100%),url('assets/rota-dos-marechais-alagoas-jornada-homens-mobile.webp')}}
 #hero::before{content:'';position:absolute;inset:0;
   background:
     radial-gradient(ellipse 70% 50% at 50% 25%,rgba(46,122,142,.22) 0%,transparent 65%),
@@ -307,15 +318,18 @@ h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:.02em}
 #numeros{background:var(--deep);padding:5rem 1.5rem;position:relative;overflow:hidden}
 #numeros::before{content:'';position:absolute;inset:0;
   background:radial-gradient(ellipse at center,rgba(46,122,142,.1) 0%,transparent 65%)}
-.num-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-  max-width:900px;margin:2.5rem auto 0;position:relative;z-index:1}
-.num-item{text-align:center;padding:2rem 1rem;
-  border-right:1px solid rgba(255,255,255,.05);
-  transition:transform .35s cubic-bezier(.23,1,.32,1);cursor:default}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);
+  max-width:1100px;margin:2.5rem auto 0;position:relative;z-index:1}
+.num-item{text-align:center;padding:2rem 1.5rem;
+  border-right:1px solid rgba(255,255,255,.07);
+  transition:transform .35s cubic-bezier(.23,1,.32,1);cursor:default;overflow:hidden}
 .num-item:last-child{border-right:none}
 .num-item:hover{transform:scale(1.06)}
-@media(max-width:640px){.num-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.05)}}
-.num-val{font-family:'Oswald',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);
+@media(max-width:700px){.num-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.num-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}}
+@media(max-width:700px){.num-item:nth-child(odd){border-right:1px solid rgba(255,255,255,.07)}}
+@media(max-width:700px){.num-val{font-size:clamp(1.8rem,8vw,2.6rem)}}
+.num-val{font-family:'Oswald',sans-serif;font-size:clamp(2rem,3.2vw,3.2rem);white-space:nowrap;
   font-weight:700;color:var(--gold);line-height:1;margin-bottom:.4rem;
   transition:color .3s,text-shadow .3s}
 .num-item:hover .num-val{color:var(--gold-l);
@@ -355,7 +369,7 @@ h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:.02em}
 .faq+.faq{margin-top:0}
 .faq-q{font-family:'Oswald',sans-serif;font-weight:500;font-size:1.05rem;
   color:var(--brown);text-transform:uppercase;letter-spacing:.02em;
-  padding:1.2rem 0;cursor:pointer;display:flex;justify-content:space-between;
+  padding:1.2rem 0;min-height:44px;cursor:pointer;display:flex;justify-content:space-between;
   align-items:center;transition:color .25s,padding-left .25s;
   border-bottom:1px solid rgba(46,122,142,.18)}
 .faq-q:hover,.faq-q.on{color:var(--gold)}
@@ -473,19 +487,25 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
   transition:border-color .35s,box-shadow .35s;will-change:transform}
 .ed-card:hover{border-color:rgba(90,158,184,.45);
   box-shadow:0 20px 48px rgba(0,0,0,.55)}
-.ed-cover{aspect-ratio:4/3;position:relative;overflow:hidden;
+.ed-cover{aspect-ratio:1/1;position:relative;overflow:hidden;
   background:linear-gradient(135deg,#0A2035,#122D45);
   display:flex;align-items:center;justify-content:center}
-.ed-cover img{width:100%;height:100%;object-fit:cover;
+.ed-cover img{width:100%;height:100%;object-fit:cover;object-position:center 15%;
   transition:transform .5s cubic-bezier(.23,1,.32,1);display:block}
 .ed-card:hover .ed-cover img{transform:scale(1.06)}
 .ed-num{font-family:'Oswald',sans-serif;font-size:5rem;font-weight:700;
   color:rgba(196,168,124,.12);line-height:1;position:absolute;
   bottom:.5rem;right:1rem;letter-spacing:-.02em;pointer-events:none}
 .ed-badge{position:absolute;top:.9rem;left:.9rem;
-  background:rgba(196,168,124,.15);border:1px solid rgba(196,168,124,.45);
-  color:var(--gold-l);font-family:'Oswald',sans-serif;font-size:.65rem;
-  letter-spacing:.2em;text-transform:uppercase;padding:.3rem .75rem;border-radius:2px}
+  background:var(--cta);border:none;
+  color:#fff;font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;padding:.35rem .9rem;border-radius:2px;
+  box-shadow:0 2px 10px rgba(0,0,0,.45)}
+.ed-tag{display:inline-flex;align-items:center;gap:.35rem;
+  background:rgba(201,106,8,.12);border:1px solid rgba(201,106,8,.5);
+  color:var(--cta-h);font-family:'Oswald',sans-serif;font-size:.68rem;
+  font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  padding:.28rem .75rem;border-radius:2px;margin-bottom:.75rem}
 .ed-body{padding:1.4rem 1.5rem 1.6rem;background:rgba(255,255,255,.03)}
 .ed-title{font-family:'Oswald',sans-serif;font-size:1.15rem;font-weight:600;
   color:#fff;text-transform:uppercase;margin-bottom:.35rem}
@@ -541,11 +561,12 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
 
   <!-- Medallion -->
   <div class="medal" id="hero-medal">
-    <img src="assets/selo-1-ano-legendarios-rota-dos-marechais.webp" alt="1 Ano Rota dos Marechais" loading="lazy" style="width:100%;height:100%;object-fit:contain">
+    <img src="assets/selo-1-ano-legendarios-rota-dos-marechais.webp" alt="1 Ano Rota dos Marechais" width="160" height="160" style="width:100%;height:100%;object-fit:contain">
   </div>
 
   <!-- Selo mobile -->
   <img src="assets/selo-1-ano-legendarios-rota-dos-marechais.webp" alt="1 Ano Rota dos Marechais"
+    width="130" height="130"
     style="width:130px;height:130px;object-fit:contain;margin-bottom:1.2rem;
     filter:drop-shadow(0 0 20px rgba(46,122,142,.5));display:block;position:relative;z-index:2"
     class="medal-mobile">
@@ -827,15 +848,16 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
       <!-- TOP 1029 PIONEIRO -->
       <div class="ed-card rv">
         <div class="ed-cover">
-          <img src="assets/top-1029-pioneiro-rota-dos-marechais.webp" alt="Fotos TOP 1029 Pioneiro — Rota dos Marechais Alagoas" loading="lazy" width="900" height="600">
-          <span class="ed-badge">Pioneiro</span>
+          <img src="assets/top-1029-pioneiro-rota-dos-marechais.webp" alt="Fotos TOP 1029 Pioneiro — Rota dos Marechais Alagoas" loading="lazy" width="675" height="900">
+          <span class="ed-badge">✦ Pioneiro</span>
           <div class="ed-num">1029</div>
         </div>
         <div class="ed-body">
-          <div class="ed-title">TOP 1029 — Pioneiro</div>
-          <div class="ed-sub">1ª edição em Alagoas</div>
+          <div class="ed-tag">TOP 1029 · 1ª Edição</div>
+          <div class="ed-title">Pioneiro em Alagoas</div>
+          <div class="ed-sub">A primeira jornada da Rota dos Marechais</div>
           <a href="https://banlek.com/album/fe41b" target="_blank" rel="noopener noreferrer" class="ed-btn">
-            Ver álbum
+            Ver álbum de fotos
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -844,15 +866,16 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
       <!-- TOP 1296 -->
       <div class="ed-card rv rv1">
         <div class="ed-cover">
-          <img src="assets/top-1296-rota-dos-marechais.webp" alt="Fotos TOP 1296 — Rota dos Marechais Alagoas" loading="lazy" width="900" height="600">
-          <span class="ed-badge">Edição 2</span>
+          <img src="assets/top-1296-rota-dos-marechais.webp" alt="Fotos TOP 1296 — Rota dos Marechais Alagoas" loading="lazy" width="675" height="900">
+          <span class="ed-badge">✦ 2ª Edição</span>
           <div class="ed-num">1296</div>
         </div>
         <div class="ed-body">
-          <div class="ed-title">TOP 1296</div>
-          <div class="ed-sub">2ª edição em Alagoas</div>
+          <div class="ed-tag">TOP 1296 · 2ª Edição</div>
+          <div class="ed-title">Consolidando a Rota</div>
+          <div class="ed-sub">A segunda jornada em Alagoas</div>
           <a href="https://banlek.com/album/16426e" target="_blank" rel="noopener noreferrer" class="ed-btn">
-            Ver álbum
+            Ver álbum de fotos
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -861,15 +884,16 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
       <!-- TOP 1397/1399 -->
       <div class="ed-card rv rv2">
         <div class="ed-cover">
-          <img src="assets/top-1397-1399-rota-dos-marechais.webp" alt="Fotos TOP 1397/1399 — Rota dos Marechais Alagoas" loading="lazy" width="900" height="1121">
-          <span class="ed-badge">Edição 3</span>
+          <img src="assets/top-1397-1399-rota-dos-marechais.webp" alt="Fotos TOP 1397 e 1399 — Rota dos Marechais Alagoas" loading="lazy" width="675" height="900">
+          <span class="ed-badge">✦ 3ª Edição</span>
           <div class="ed-num">1399</div>
         </div>
         <div class="ed-body">
-          <div class="ed-title">TOP 1397 / 1399</div>
-          <div class="ed-sub">3ª edição em Alagoas</div>
+          <div class="ed-tag">TOP 1399 · 3ª Edição</div>
+          <div class="ed-title">Amor, Honra e Unidade</div>
+          <div class="ed-sub">A edição mais recente em Alagoas</div>
           <a href="https://banlek.com/album/1c8d03" target="_blank" rel="noopener noreferrer" class="ed-btn">
-            Ver álbum
+            Ver álbum de fotos
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
