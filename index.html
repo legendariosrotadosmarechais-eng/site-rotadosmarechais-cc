@@ -91,9 +91,9 @@
   --navy:#152535;--navy-l:#1E3A4A;--navy-ring:#0D1F2D;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:hidden;overscroll-behavior:none;background:var(--navy)}
+html{scroll-behavior:smooth;overflow-x:clip;overscroll-behavior-x:none;background:var(--navy);touch-action:pan-y}
 html::after{content:'';position:fixed;left:0;right:0;bottom:0;height:50vh;background:#06101A;z-index:-1;pointer-events:none}
-body{font-family:'Lato',sans-serif;background:var(--sand);color:var(--brown);overflow-x:hidden;overscroll-behavior:none;touch-action:pan-y}
+body{font-family:'Lato',sans-serif;background:var(--sand);color:var(--brown);overflow-x:clip;overscroll-behavior-x:none;touch-action:pan-y}
 h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:.02em}
 
 /* ── CURSOR GLOW ── */
