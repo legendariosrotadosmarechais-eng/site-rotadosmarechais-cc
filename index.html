@@ -2,6 +2,10 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<!-- Meta Pixel -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1740231384017437');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1740231384017437&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Legendários Rota dos Marechais — 4 a 7 de Junho | Alagoas</title>
 <meta name="description" content="A jornada que transforma homens. Rota dos Marechais — 4 a 7 de Junho em Arapiraca, Alagoas. Amor, Honra e Unidade. Garanta sua vaga agora.">
@@ -324,7 +328,7 @@ h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:.02em}
   border-right:1px solid rgba(255,255,255,.07);
   transition:transform .35s cubic-bezier(.23,1,.32,1);cursor:default;overflow:hidden}
 .num-item:last-child{border-right:none}
-.num-item:hover{transform:scale(1.06)}
+.num-item:hover,.num-item:active{transform:scale(1.06)}
 @media(max-width:700px){.num-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.num-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}}
 @media(max-width:700px){.num-item:nth-child(odd){border-right:1px solid rgba(255,255,255,.07)}}
@@ -332,11 +336,11 @@ h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:.02em}
 .num-val{font-family:'Oswald',sans-serif;font-size:clamp(2rem,3.2vw,3.2rem);white-space:nowrap;
   font-weight:700;color:var(--gold);line-height:1;margin-bottom:.4rem;
   transition:color .3s,text-shadow .3s}
-.num-item:hover .num-val{color:var(--gold-l);
+.num-item:hover .num-val,.num-item:active .num-val{color:var(--gold-l);
   text-shadow:0 0 28px rgba(196,168,124,.55)}
 .num-lbl{font-size:.78rem;color:rgba(255,255,255,.4);
   letter-spacing:.15em;text-transform:uppercase;transition:color .3s}
-.num-item:hover .num-lbl{color:rgba(255,255,255,.65)}
+.num-item:hover .num-lbl,.num-item:active .num-lbl{color:rgba(255,255,255,.65)}
 
 /* ── DEPOIMENTOS ── */
 #depoimentos{background:var(--sand)}
@@ -485,14 +489,14 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
   gap:1.6rem;margin-top:3rem;position:relative;z-index:1}
 .ed-card{border-radius:4px;overflow:hidden;border:1px solid rgba(90,158,184,.15);
   transition:border-color .35s,box-shadow .35s;will-change:transform}
-.ed-card:hover{border-color:rgba(90,158,184,.45);
+.ed-card:hover,.ed-card:active{border-color:rgba(90,158,184,.45);
   box-shadow:0 20px 48px rgba(0,0,0,.55)}
 .ed-cover{aspect-ratio:1/1;position:relative;overflow:hidden;
   background:linear-gradient(135deg,#0A2035,#122D45);
   display:flex;align-items:center;justify-content:center}
 .ed-cover img{width:100%;height:100%;object-fit:cover;object-position:center 15%;
   transition:transform .5s cubic-bezier(.23,1,.32,1);display:block}
-.ed-card:hover .ed-cover img{transform:scale(1.06)}
+.ed-card:hover .ed-cover img,.ed-card:active .ed-cover img{transform:scale(1.06)}
 .ed-num{font-family:'Oswald',sans-serif;font-size:5rem;font-weight:700;
   color:rgba(196,168,124,.12);line-height:1;position:absolute;
   bottom:.5rem;right:1rem;letter-spacing:-.02em;pointer-events:none}
@@ -519,6 +523,32 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
 .ed-btn:hover{border-color:var(--gold);background:rgba(196,168,124,.08);color:var(--gold-l)}
 .ed-btn svg{flex-shrink:0;transition:transform .3s}
 .ed-btn:hover svg{transform:translateX(3px)}
+
+/* ── ALBUM MODAL ── */
+#alb{position:fixed;inset:0;z-index:998;background:rgba(6,16,26,.97);
+  display:flex;flex-direction:column;
+  opacity:0;transition:opacity .3s;pointer-events:none}
+#alb.open{opacity:1;pointer-events:all}
+#alb-bar{display:flex;align-items:center;justify-content:space-between;
+  padding:.75rem 1.2rem;background:#0D1E2B;
+  border-bottom:1px solid rgba(196,168,124,.18);flex-shrink:0}
+#alb-title{font-family:'Oswald',sans-serif;font-size:.88rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+#alb-close{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+  color:#fff;font-size:1rem;width:38px;height:38px;border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s,transform .2s;flex-shrink:0}
+#alb-close:hover{background:rgba(255,255,255,.2);transform:scale(1.1)}
+#alb iframe{flex:1;border:none;width:100%;background:#06101A}
+#alb-fallback{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:1.2rem;padding:2rem;text-align:center;display:none}
+#alb-fallback p{color:rgba(255,255,255,.5);font-size:.9rem}
+#alb-fallback a{font-family:'Oswald',sans-serif;font-size:.85rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--gold);
+  text-decoration:none;border:1px solid rgba(196,168,124,.35);
+  padding:.6rem 1.4rem;border-radius:2px;
+  transition:border-color .3s,background .3s}
+#alb-fallback a:hover{border-color:var(--gold);background:rgba(196,168,124,.08)}
 
 /* ── FOCUS VISIBLE ── */
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
@@ -680,12 +710,8 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
 
       <div class="rv rv2" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
         <img src="assets/logo-rota-dos-marechais.webp" alt="Logo Rota dos Marechais"
-          loading="lazy" width="220" height="220" style="width:220px;height:220px"
-          style="width:220px;height:220px;object-fit:contain;
-          filter:drop-shadow(0 8px 24px rgba(0,0,0,.18));
-          transition:filter .4s,transform .4s"
-          onmouseover="this.style.filter='drop-shadow(0 12px 36px rgba(46,122,142,.35))';this.style.transform='scale(1.04)'"
-          onmouseout="this.style.filter='drop-shadow(0 8px 24px rgba(0,0,0,.18))';this.style.transform=''">
+          id="logo-sobre" loading="lazy" width="220" height="220"
+          style="width:220px;height:220px;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(0,0,0,.18));transition:filter .4s,transform .4s">
 
         <div style="background:var(--cream);border:1px solid rgba(46,122,142,.18);
           padding:1.5rem;border-radius:4px;width:100%;max-width:280px;text-align:center;
@@ -856,10 +882,10 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
           <div class="ed-tag">TOP 1029 · 1ª Edição</div>
           <div class="ed-title">Pioneiro em Alagoas</div>
           <div class="ed-sub">A primeira jornada da Rota dos Marechais</div>
-          <a href="https://banlek.com/album/fe41b" target="_blank" rel="noopener noreferrer" class="ed-btn">
+          <button class="ed-btn" onclick="openAlbum('https://banlek.com/album/fe41b','TOP 1029 Pioneiro — Álbum de Fotos')">
             Ver álbum de fotos
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          </button>
         </div>
       </div>
 
@@ -874,10 +900,10 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
           <div class="ed-tag">TOP 1296 · 2ª Edição</div>
           <div class="ed-title">Consolidando a Rota</div>
           <div class="ed-sub">A segunda jornada em Alagoas</div>
-          <a href="https://banlek.com/album/16426e" target="_blank" rel="noopener noreferrer" class="ed-btn">
+          <button class="ed-btn" onclick="openAlbum('https://banlek.com/album/16426e','TOP 1296 — Álbum de Fotos')">
             Ver álbum de fotos
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          </button>
         </div>
       </div>
 
@@ -892,10 +918,10 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
           <div class="ed-tag">TOP 1399 · 3ª Edição</div>
           <div class="ed-title">Amor, Honra e Unidade</div>
           <div class="ed-sub">A edição mais recente em Alagoas</div>
-          <a href="https://banlek.com/album/1c8d03" target="_blank" rel="noopener noreferrer" class="ed-btn">
+          <button class="ed-btn" onclick="openAlbum('https://banlek.com/album/1c8d03','TOP 1399 — Álbum de Fotos')">
             Ver álbum de fotos
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          </button>
         </div>
       </div>
 
@@ -975,7 +1001,7 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
     </div>
 
     <div style="text-align:center;margin-top:1.2rem">
-      <a href="https://ticketandgo.com.br/legendarios-top-1667-track-rota-dos-marechais-o-evento-ocorrera-do-dia-0406-a-0706?id=51318efe-1b82-4119-8147-225dcce3f407&utm_source=site&utm_medium=cta&utm_campaign=rota-dos-marechais" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-big btn-magnetic">
+      <a href="https://ticketandgo.com.br/legendarios-top-1667-track-rota-dos-marechais-o-evento-ocorrera-do-dia-0406-a-0706?id=51318efe-1b82-4119-8147-225dcce3f407&utm_source=site&utm_medium=cta&utm_campaign=rota-dos-marechais" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-big btn-magnetic" onclick="if(typeof fbq!=='undefined')fbq('track','Lead',{content_name:'CTA Principal'});">
         Garantir Minha Vaga Agora →
       </a>
       <p style="font-size:.78rem;color:rgba(255,255,255,.3);margin-top:1rem">
@@ -988,7 +1014,7 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
 <!-- STICKY MOBILE CTA -->
 <div id="sticky-cta" role="complementary" aria-label="Inscrição rápida">
   <div class="sc-text">Garanta sua vaga<span>4–7 Jun · Arapiraca, AL</span></div>
-  <a href="https://ticketandgo.com.br/legendarios-top-1667-track-rota-dos-marechais-o-evento-ocorrera-do-dia-0406-a-0706?id=51318efe-1b82-4119-8147-225dcce3f407&utm_source=site&utm_medium=sticky&utm_campaign=rota-dos-marechais" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Inscrever →</a>
+  <a href="https://ticketandgo.com.br/legendarios-top-1667-track-rota-dos-marechais-o-evento-ocorrera-do-dia-0406-a-0706?id=51318efe-1b82-4119-8147-225dcce3f407&utm_source=site&utm_medium=sticky&utm_campaign=rota-dos-marechais" target="_blank" rel="noopener noreferrer" class="btn btn-gold" onclick="if(typeof fbq!=='undefined')fbq('track','Lead',{content_name:'Sticky CTA'});">Inscrever →</a>
 </div>
 
 <!-- ══════════════════════════════════════════════════════ FOOTER -->
@@ -1002,6 +1028,18 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
   </div>
   <div class="ft-copy">© 2026 Legendários Rota dos Marechais — Alagoas &nbsp;·&nbsp; <a href="/politica-de-privacidade/" style="color:rgba(255,255,255,.3);text-decoration:none" onmouseover="this.style.color='rgba(196,168,124,.7)'" onmouseout="this.style.color='rgba(255,255,255,.3)'">Política de Privacidade</a></div>
 </footer>
+
+<div id="alb" role="dialog" aria-modal="true" aria-labelledby="alb-title" style="display:none">
+  <div id="alb-bar">
+    <span id="alb-title">Álbum de Fotos</span>
+    <button id="alb-close" aria-label="Fechar álbum">✕</button>
+  </div>
+  <iframe id="alb-frame" src="" title="Álbum de fotos" allow="fullscreen" loading="lazy"></iframe>
+  <div id="alb-fallback">
+    <p>O álbum não pôde ser carregado aqui.<br>Clique para ver no site do álbum.</p>
+    <a id="alb-link" href="#" target="_blank" rel="noopener noreferrer">Abrir álbum →</a>
+  </div>
+</div>
 
 <script>
 // ── REDUCED MOTION GUARD ──
@@ -1094,27 +1132,73 @@ document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' '){e.preventDefault();faq(q);} });
 });
 
-// ── PREMIUM HOVER EFFECTS (desktop / pointer device only) ──
-if (!noMotion && window.matchMedia('(hover: hover)').matches) {
+// ── EFEITOS POINTER (mouse + touch + emulador Chrome — Pointer Events API) ──
+if (!noMotion) {
+  // 3D card tilt
+  document.querySelectorAll('.tilt-card').forEach(card => {
+    function applyTilt(cx, cy) {
+      const r = card.getBoundingClientRect();
+      const x = (cx - r.left - r.width  / 2) / (r.width  / 2);
+      const y = (cy - r.top  - r.height / 2) / (r.height / 2);
+      card.style.transition = 'box-shadow .1s';
+      card.style.transform =
+        `perspective(700px) rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-6px) scale(1.01)`;
+      card.style.boxShadow =
+        `${-x*12}px ${y*10+18}px 40px rgba(46,122,142,.2)`;
+    }
+    function resetTilt() {
+      card.style.transition = 'transform .55s cubic-bezier(.23,1,.32,1), box-shadow .55s';
+      card.style.transform  = '';
+      card.style.boxShadow  = '';
+    }
+    card.addEventListener('pointermove',  e => applyTilt(e.clientX, e.clientY), {passive:true});
+    card.addEventListener('pointerleave', resetTilt);
+    card.addEventListener('pointerup',    resetTilt);
+  });
 
-  // Cursor ambient glow (rAF-based smooth follow)
+  // Magnetic CTA buttons
+  document.querySelectorAll('.btn-magnetic').forEach(btn => {
+    function applyMagnetic(cx, cy) {
+      const r = btn.getBoundingClientRect();
+      const x = (cx - r.left - r.width  / 2) * 0.22;
+      const y = (cy - r.top  - r.height / 2) * 0.22;
+      btn.style.transform = `translate(${x}px,${y}px)`;
+    }
+    function resetMagnetic() {
+      btn.style.transition = 'transform .6s cubic-bezier(.23,1,.32,1)';
+      btn.style.transform  = '';
+      setTimeout(() => { btn.style.transition = ''; }, 600);
+    }
+    btn.addEventListener('pointermove',  e => applyMagnetic(e.clientX, e.clientY), {passive:true});
+    btn.addEventListener('pointerleave', resetMagnetic);
+    btn.addEventListener('pointerup',    resetMagnetic);
+  });
+
+  // Logo "Sobre"
+  const logoSobre = document.getElementById('logo-sobre');
+  if (logoSobre) {
+    const logoIn  = () => { logoSobre.style.filter='drop-shadow(0 12px 36px rgba(46,122,142,.35))';logoSobre.style.transform='scale(1.04)'; };
+    const logoOut = () => { logoSobre.style.filter='drop-shadow(0 8px 24px rgba(0,0,0,.18))';logoSobre.style.transform=''; };
+    logoSobre.addEventListener('pointerenter', logoIn);
+    logoSobre.addEventListener('pointerleave', logoOut);
+  }
+}
+
+// ── EFEITOS APENAS MOUSE/POINTER (desktop) ──
+if (!noMotion && window.matchMedia('(hover: hover)').matches) {
+  // Cursor ambient glow
   const cursorFx = document.getElementById('cursor-fx');
   let cx = 0, cy = 0, ccx = 0, ccy = 0;
-  document.addEventListener('mousemove', e => {
-    cx = e.clientX; cy = e.clientY;
-    cursorFx.style.opacity = '1';
-  }, {passive:true});
+  document.addEventListener('mousemove', e => { cx = e.clientX; cy = e.clientY; cursorFx.style.opacity = '1'; }, {passive:true});
   document.addEventListener('mouseleave', () => { cursorFx.style.opacity = '0'; });
   (function rafLoop(){
-    ccx += (cx - ccx) * 0.1;
-    ccy += (cy - ccy) * 0.1;
-    cursorFx.style.left = ccx + 'px';
-    cursorFx.style.top  = ccy + 'px';
+    ccx += (cx - ccx) * 0.1; ccy += (cy - ccy) * 0.1;
+    cursorFx.style.left = ccx + 'px'; cursorFx.style.top = ccy + 'px';
     requestAnimationFrame(rafLoop);
   })();
 
-  // Hero interactive spotlight
-  const heroEl  = document.getElementById('hero');
+  // Hero spotlight
+  const heroEl   = document.getElementById('hero');
   const heroSpot = document.getElementById('hero-spot');
   if (heroEl && heroSpot) {
     heroEl.addEventListener('mousemove', e => {
@@ -1130,7 +1214,7 @@ if (!noMotion && window.matchMedia('(hover: hover)').matches) {
     });
   }
 
-  // CTA section spotlight
+  // CTA spotlight
   const inscEl   = document.getElementById('inscricao');
   const inscSpot = document.getElementById('insc-spot');
   if (inscEl && inscSpot) {
@@ -1143,7 +1227,7 @@ if (!noMotion && window.matchMedia('(hover: hover)').matches) {
     }, {passive:true});
   }
 
-  // Medal parallax on hero mousemove
+  // Medal parallax
   const medal = document.getElementById('hero-medal');
   if (heroEl && medal) {
     heroEl.addEventListener('mousemove', e => {
@@ -1158,41 +1242,52 @@ if (!noMotion && window.matchMedia('(hover: hover)').matches) {
       setTimeout(() => { medal.style.transition = ''; }, 600);
     });
   }
-
-  // Magnetic CTA buttons
-  document.querySelectorAll('.btn-magnetic').forEach(btn => {
-    btn.addEventListener('mousemove', e => {
-      const r = btn.getBoundingClientRect();
-      const x = (e.clientX - r.left - r.width  / 2) * 0.22;
-      const y = (e.clientY - r.top  - r.height / 2) * 0.22;
-      btn.style.transform = `translate(${x}px,${y}px)`;
-    }, {passive:true});
-    btn.addEventListener('mouseleave', () => {
-      btn.style.transition = 'transform .6s cubic-bezier(.23,1,.32,1)';
-      btn.style.transform  = '';
-      setTimeout(() => { btn.style.transition = ''; }, 600);
-    });
-  });
-
-  // 3D card tilt
-  document.querySelectorAll('.tilt-card').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const r = card.getBoundingClientRect();
-      const x = (e.clientX - r.left - r.width  / 2) / (r.width  / 2);
-      const y = (e.clientY - r.top  - r.height / 2) / (r.height / 2);
-      card.style.transition = 'box-shadow .35s';
-      card.style.transform =
-        `perspective(700px) rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-6px) scale(1.01)`;
-      card.style.boxShadow =
-        `${-x*12}px ${y*10+18}px 40px rgba(46,122,142,.2)`;
-    }, {passive:true});
-    card.addEventListener('mouseleave', () => {
-      card.style.transition = 'transform .55s cubic-bezier(.23,1,.32,1), box-shadow .55s';
-      card.style.transform  = '';
-      card.style.boxShadow  = '';
-    });
-  });
 }
+
+// ── ALBUM MODAL ──
+(function(){
+  var alb=document.getElementById('alb');
+  var albFrame=document.getElementById('alb-frame');
+  var albTitle=document.getElementById('alb-title');
+  var albClose=document.getElementById('alb-close');
+  var albFallback=document.getElementById('alb-fallback');
+  var albLink=document.getElementById('alb-link');
+  var lastFocusAlb=null;
+
+  window.openAlbum=function(url,title){
+    lastFocusAlb=document.activeElement;
+    albTitle.textContent=title||'Álbum de Fotos';
+    albFrame.style.display='block';
+    albFallback.style.display='none';
+    albLink.href=url;
+    albFrame.src=url;
+    alb.style.display='flex';
+    requestAnimationFrame(function(){alb.classList.add('open');});
+    document.body.style.overflow='hidden';
+    albClose.focus();
+
+    albFrame.onerror=function(){
+      albFrame.style.display='none';
+      albFallback.style.display='flex';
+    };
+  };
+
+  function closeAlbum(){
+    alb.classList.remove('open');
+    setTimeout(function(){
+      alb.style.display='none';
+      albFrame.src='';
+    },320);
+    document.body.style.overflow='';
+    if(lastFocusAlb)lastFocusAlb.focus();
+  }
+
+  albClose.addEventListener('click',closeAlbum);
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&alb.classList.contains('open'))closeAlbum();
+  });
+})();
+
 </script>
 </body>
 </html>
