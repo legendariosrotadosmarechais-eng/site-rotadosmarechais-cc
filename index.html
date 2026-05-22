@@ -478,7 +478,10 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
 #sticky-cta .sc-text span{display:block;font-size:.65rem;color:rgba(255,255,255,.35);
   font-weight:400}
 #sticky-cta .btn{flex-shrink:0;white-space:nowrap}
-@media(max-width:768px){#sticky-cta{display:flex}}
+@media(max-width:768px){#sticky-cta{display:flex;flex-wrap:nowrap}}
+@media(max-width:400px){#sticky-cta{padding:.7rem .9rem;gap:.6rem}
+  #sticky-cta .sc-text{font-size:.75rem}
+  #sticky-cta .btn{padding:.55rem .9rem;font-size:.78rem}}
 
 /* ── EDIÇÕES ANTERIORES ── */
 #edicoes{background:var(--deep);padding:5.5rem 1.5rem;position:relative;overflow:hidden}
@@ -647,19 +650,17 @@ footer{background:#06101A;padding:3rem 1.5rem 2rem;text-align:center}
       <div class="divider"></div>
     </div>
 
-    <!--
-      TROCAR PELO EMBED DO VÍDEO:
-      <iframe width="100%" style="aspect-ratio:16/9;border-radius:4px"
-        src="https://www.youtube.com/embed/SEU_ID_AQUI?autoplay=0&rel=0"
-        frameborder="0" allowfullscreen></iframe>
-    -->
-    <button class="vid-box rv" onclick="window.open('https://www.instagram.com/legendariosrotadosmarechais/reels/','_blank')" aria-label="Assistir Reels no Instagram @legendariosrotadosmarechais (abre em nova aba)" style="width:100%;border:1px solid rgba(90,158,184,.2);background:linear-gradient(135deg,#0A2035,#122D45)">
-      <div class="play" aria-hidden="true"><div class="play-tri"></div></div>
-      <p class="vid-cap">
-        Assista os Reels no Instagram<br>
-        <span style="font-size:.72rem;opacity:.55">@legendariosrotadosmarechais</span>
-      </p>
-    </button>
+    <div class="rv" style="display:flex;justify-content:center">
+      <iframe
+        src="https://www.instagram.com/reel/DYo_Dm8RMSk/embed/"
+        width="400"
+        style="max-width:100%;aspect-ratio:9/16;border:none;border-radius:8px;overflow:hidden;display:block"
+        scrolling="no"
+        allowtransparency="true"
+        allowfullscreen
+        title="Reel Rota dos Marechais no Instagram">
+      </iframe>
+    </div>
   </div>
 </section>
 
